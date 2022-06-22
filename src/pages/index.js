@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
@@ -21,7 +21,7 @@ const links = [
   },
   {
     text: "Discord",
-    url: "https://www.gatsbyjs.com/plugins",
+    url: "https://discord.gg/G2xvVfA",
     description:
       "Come join the discord to hang out, game, and be notified when I go live",
   },
@@ -33,18 +33,18 @@ const links = [
   },
 ]
 
-const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-]
+// const samplePageLinks = [
+//   {
+//     text: "Page 2",
+//     url: "page-2",
+//     badge: false,
+//     description:
+//       "A simple example of linking to another page within a Gatsby site",
+//   },
+//   { text: "TypeScript", url: "using-typescript" },
+//   { text: "Server Side Rendering", url: "using-ssr" },
+//   { text: "Deferred Static Generation", url: "using-dsg" },
+// ]
 
 // const moreLinks = [
 //   { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
@@ -85,24 +85,14 @@ const IndexPage = () => (
       <h1>
         <b>Musclestache's StacheSpace!</b>
       </h1>
-      {/* <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
-      </p> */}
+      
     </div>
     <ul className={styles.list}>
       {links.map(link => (
         <li key={link.url} className={styles.listItem}>
           <a
             className={styles.listItemLink}
-            //href={`${link.url}${utmParameters}`}
+            href={`${link.url}`}
           >
             {link.text} ↗
           </a>
