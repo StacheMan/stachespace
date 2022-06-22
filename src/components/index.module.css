@@ -11,10 +11,15 @@
   );
   margin-bottom: var(--size-gap);
   margin-top: var(--size-gap);
+
 }
 
 .listItem {
   margin: 0;
+  outline: 2px ridge;
+  border-radius: 5px;
+  padding-left: 5px;
+  color: invert;
 }
 
 .listItem::marker {
