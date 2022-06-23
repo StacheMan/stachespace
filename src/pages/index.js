@@ -1,7 +1,7 @@
 import * as React from "react"
 //import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-
+// import { TwitchEmbed, TwitchChat, TwitchPlayer } from 'react-twitch-embed';
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
@@ -32,6 +32,20 @@ const links = [
       "Check out my TikTok, where I post my best edited clips",
   },
 ]
+
+// const Stream = () => {
+//   return (
+//     <div>
+//       <TwitchEmbed
+//         channel="musclestache"
+//         id="musclestache"
+//         theme="dark"
+//         muted
+//         onVideoPause={() => console.log(':(')}
+//       />
+//     </div>
+//   );
+// }
 
 const IndexPage = () => (
   <Layout>
@@ -67,3 +81,6 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+// export {
+//   Stream,
+// }
