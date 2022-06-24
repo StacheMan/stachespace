@@ -53,4 +53,4 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export function Layout ()
+export default Layout 

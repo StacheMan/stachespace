@@ -2,7 +2,7 @@ import * as React from "react"
 //import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { TwitchEmbed } from 'react-twitch-embed';
-import  { Layout }  from "../components/layout"
+import   Layout   from "../components/layout"
 // import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 import * as embed from "../components/embded.module.css"
@@ -34,25 +34,13 @@ const links = [
   },
 ]
 
-export const Stream = () => {
-  return (
-    <div className={embed.playerSpecs}>
-      <TwitchEmbed
-        channel="musclestache"
-        id="musclestache"
-        theme="dark"
-        muted
-        height={600}
-        width={1200}
-        padding-left={1000}
-        margin-left={0}
-        onVideoPause={() => console.log(':(')}
-      />
-    </div>
-  );
-}
+//  const Stream = () => {
+//   return (
+   
+//   );
+// }
 
-export const IndexPage = () => (
+ const Stream = () => (
   <Layout>
     {/* <Seo title="Home" /> */}
     <div className={styles.textCenter}>
@@ -66,9 +54,22 @@ export const IndexPage = () => (
         style={{ marginBottom: `var(--space-3)` }}
       />
       <h1>
-        <b>Musclestache's StacheSpace!</b>
+        <b>Welcome to StacheSpace!</b>
       </h1> 
     </div>
+    <div className={embed.playerSpecs}>
+    <TwitchEmbed
+      channel="musclestache"
+      id="musclestache"
+      theme="dark"
+      muted
+      height={600}
+      width={1200}
+      padding-right={1000}
+      margin-right={0}
+      onVideoPause={() => console.log(':(')}
+    />
+  </div>
     <ul className={styles.list}>
       {links.map(link => (
         <li id={link.image} key={link.url} className={styles.listItem}>
@@ -95,5 +96,5 @@ export const IndexPage = () => (
   </Layout>
 )
 
-// export { IndexPage, Stream} 
+export default Stream 
 

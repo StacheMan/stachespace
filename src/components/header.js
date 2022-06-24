@@ -23,4 +23,4 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
-export function Header()
+export default Header
