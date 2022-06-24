@@ -1,10 +1,11 @@
 import * as React from "react"
 //import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-// import { TwitchEmbed, TwitchChat, TwitchPlayer } from 'react-twitch-embed';
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import { TwitchEmbed } from 'react-twitch-embed';
+import  { Layout }  from "../components/layout"
+// import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
+import * as embed from "../components/embded.module.css"
 
 const links = [
   {
@@ -33,23 +34,27 @@ const links = [
   },
 ]
 
-// const Stream = () => {
-//   return (
-//     <div>
-//       <TwitchEmbed
-//         channel="musclestache"
-//         id="musclestache"
-//         theme="dark"
-//         muted
-//         onVideoPause={() => console.log(':(')}
-//       />
-//     </div>
-//   );
-// }
+export const Stream = () => {
+  return (
+    <div className={embed.playerSpecs}>
+      <TwitchEmbed
+        channel="musclestache"
+        id="musclestache"
+        theme="dark"
+        muted
+        height={600}
+        width={1200}
+        padding-left={1000}
+        margin-left={0}
+        onVideoPause={() => console.log(':(')}
+      />
+    </div>
+  );
+}
 
-const IndexPage = () => (
+export const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
+    {/* <Seo title="Home" /> */}
     <div className={styles.textCenter}>
       <StaticImage
         src="../images/Icon.png"
@@ -66,12 +71,22 @@ const IndexPage = () => (
     </div>
     <ul className={styles.list}>
       {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
+        <li id={link.image} key={link.url} className={styles.listItem}>
           <a
+           
             className={styles.listItemLink}
             href={`${link.url}`}
+            
           >
             {link.text} ↗
+            
+          </a>
+          <a
+
+            href={`${link.image}`}
+
+          >
+            
           </a>
           <p className={styles.listItemDescription}>{link.description}</p>
         </li>
@@ -80,7 +95,5 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
-// export {
-//   Stream,
-// }
+// export { IndexPage, Stream} 
+

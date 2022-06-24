@@ -1,0 +1,8 @@
+.playerSpecs {
+    margin: 0;
+    margin-top: var(--size-gap);
+    margin-bottom: var(--size-gap);
+    margin-left: var(--size-gap);
+    margin-right: var(--size-gap);
+}
+
