@@ -6,39 +6,10 @@ import   Layout   from "../components/layout"
 // import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 import * as embed from "../components/embded.module.css"
-
-const links = [
-  {
-    text: "Twitter",
-    url: "https://twitter.com/MusclestacheG",
-    description:
-      "Check out my Twitter for random thoughts and stream updates",
-  },
-  {
-    text: "YouTube",
-    url: "https://www.youtube.com/channel/UCP9thOaAhuyoyO8iVrHx2BQ/?guided_help_flow=5&disable_polymer=true",
-    description:
-      "Check out my YouTube, where I post playthroughs and clip compilations.",
-  },
-  {
-    text: "Discord",
-    url: "https://discord.gg/G2xvVfA",
-    description:
-      "Come join the discord to hang out, game, and be notified when I go live",
-  },
-  {
-    text: "TikTok",
-    url: "https://www.tiktok.com/@musclestachegaming",
-    description:
-      "Check out my TikTok, where I post my best edited clips",
-  },
-]
-
-//  const Stream = () => {
-//   return (
-   
-//   );
-// }
+import Twitter from "../images/twitter1.png"
+import YouTube from "../images/youtube.png"
+import Discord from "../images/discord.png"
+import TikTok from "../images/TikTok.png"
 
  const Stream = () => (
   <Layout>
@@ -65,33 +36,40 @@ const links = [
       muted
       height={600}
       width={1200}
-      padding-right={1000}
-      margin-right={0}
+      // padding-right={1000}
+      // margin-right={0}
       onVideoPause={() => console.log(':(')}
     />
   </div>
     <ul className={styles.list}>
-      {links.map(link => (
-        <li id={link.image} key={link.url} className={styles.listItem}>
-          <a
-           
-            className={styles.listItemLink}
-            href={`${link.url}`}
-            
-          >
-            {link.text} ↗
-            
+      <li>
+          <a href="https://twitter.com/MusclestacheG">
+            <img alt="Twitter" src={Twitter} width={50} height={50}></img>
           </a>
-          <a
 
-            href={`${link.image}`}
-
-          >
-            
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
+          <p className={styles.listItemDescription}>Check out my Twitter for random thoughts and stream updates!</p>
         </li>
-      ))}
+        <li>
+            <a href="https://www.youtube.com/channel/UCP9thOaAhuyoyO8iVrHx2BQ/?guided_help_flow=5&disable_polymer=true">
+              <img alt="YouTube" src={YouTube} width={50} height={50}></img>
+            </a>
+
+            <p className={styles.listItemDescription}>Check out my YouTube, where I post my playthroughs and clip compilations!</p>
+          </li>
+          <li>
+          <a href="https://discord.gg/G2xvVfA">
+            <img alt="Discord" src={Discord} width={50} height={50}></img>
+          </a>
+
+          <p className={styles.listItemDescription}>Come join the discord to hang out, game, and be notified when I go live</p>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@musclestachegaming">
+            <img alt="TikTok" src={TikTok} width={50} height={50}></img>
+          </a>
+
+          <p className={styles.listItemDescription}>Check out my TikTok, where I post my best edited clips</p>
+        </li>
     </ul>
   </Layout>
 )
