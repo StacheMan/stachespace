@@ -2,7 +2,9 @@
     margin: 0;
     margin-top: var(--size-gap);
     margin-bottom: var(--size-gap);
+    visibility: visible;
+    clear: right;
     /* margin-left: var(--size-gap); */
-    margin-right: var(--size-gap);
+    /* margin-right: var(--size-gap); */
 }
 

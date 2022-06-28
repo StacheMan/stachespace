@@ -3,9 +3,9 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { TwitchEmbed } from 'react-twitch-embed';
 import   Layout   from "../components/layout"
-// import Seo from "../components/seo"
+ import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
-import * as embed from "../components/embded.module.css"
+import * as embed from "../components/embed.module.css"
 import Twitter from "../images/twitter1.png"
 import YouTube from "../images/youtube.png"
 import Discord from "../images/discord.png"
@@ -13,8 +13,8 @@ import TikTok from "../images/TikTok.png"
 
  const Stream = () => (
   <Layout>
-    {/* <Seo title="Home" /> */}
-    <div className={styles.textCenter}>
+    <Seo title="Home" />
+    <div className={styles.textCenter} cla>
       <StaticImage
         src="../images/Icon.png"
         loading="eager"
@@ -36,8 +36,9 @@ import TikTok from "../images/TikTok.png"
       muted
       height={600}
       width={1200}
-      // padding-right={1000}
-      // margin-right={0}
+      
+       //padding-left={1000}
+       //margin-left={0}
       onVideoPause={() => console.log(':(')}
     />
   </div>
@@ -73,6 +74,7 @@ import TikTok from "../images/TikTok.png"
     </ul>
   </Layout>
 )
+
 
 export default Stream 
 

@@ -11,6 +11,7 @@
   margin-bottom: var(--size-gap);
   margin-top: var(--size-gap);
   overflow: hidden;
+  align-self: center;
 
 }
 
@@ -25,7 +26,6 @@
 }
 
 .textCenter {
-  text-align: left;
   text-align: center;
 }
 

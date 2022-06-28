@@ -123,13 +123,13 @@ ol,
 dl,
 dd,
 p {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   margin-bottom: var(--space-4);
 }
 ul,
 ol {
-  margin-left: var(--space-4);
+  /* margin-right: var(--space-4); */
   list-style-type: none;
 }
 pre {
