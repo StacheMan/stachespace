@@ -2,7 +2,7 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { TwitchPlayer } from 'react-twitch-embed';
 import   Layout   from "../components/layout"
-import Seo from "../components/seo"
+//import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 import * as embed from "../components/embed.module.css"
 import Twitter from "../images/twitter1.png"
@@ -13,7 +13,7 @@ import Instagram from "../images/gram.png"
 
  const Frontpage = () => (
   <Layout>
-    <Seo title="Home" />
+    {/* <Seo title="Home" /> */}
     <div className={styles.textCenter} cla>
       <StaticImage
         src="../images/Icon.png"
@@ -68,3 +68,4 @@ import Instagram from "../images/gram.png"
 )
 
 export default Frontpage 
+
