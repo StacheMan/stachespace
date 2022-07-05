@@ -8,7 +8,7 @@ import * as embed from "../components/embed.module.css"
 import Twitter from "../images/twitter1.png"
 import YouTube from "../images/youtube.png"
 import Discord from "../images/discord.png"
-import TikTok from "../images/TikTok.png"
+//import TikTok from "../images/TikTok.png"
 import Instagram from "../images/gram.png"
 
  const Frontpage = () => (
@@ -47,11 +47,11 @@ import Instagram from "../images/gram.png"
             <img alt="Instagram" src={Instagram} width={50} height={50}></img>
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="https://www.tiktok.com/@musclestachegaming">
             <img alt="TikTok" src={TikTok} width={50} height={50}></img>
           </a>
-        </li>
+        </li> */}
     </ul>
   <div className={embed.playerSpecs}>
     <TwitchPlayer
