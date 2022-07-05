@@ -29,12 +29,12 @@ import Instagram from "../images/gram.png"
     <ul className={styles.list}>
       <li>
           <a href="https://twitter.com/MusclestacheG">
-            <img alt="Twitter" src={Twitter} width={50} height={50}></img>
+            <img alt="Twitter" src={Twitter} width={40} height={40}></img>
           </a>
         </li>
         <li>
             <a href="https://www.youtube.com/channel/UCP9thOaAhuyoyO8iVrHx2BQ/?guided_help_flow=5&disable_polymer=true">
-              <img alt="YouTube" src={YouTube} width={50} height={50}></img>
+              <img alt="YouTube" src={YouTube} width={40} height={40}></img>
             </a>
           </li>
           <li>
