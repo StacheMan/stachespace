@@ -2,6 +2,7 @@
   --border-radius: 4px;
   --color-text: #F7F4E9;
   --color-primary: #E1732F;
+  --color-secondary:#7a03fa;
   --color-code-bg: #373634;
   --color-code: #8a6534;
   --color-border: #000000;
@@ -9,6 +10,7 @@
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", "Monaco", monospace;
+  --font-xlg: 48px;
   --font-lg: 18px;
   --font-md: 16px;
   --font-sm: 14px;
@@ -22,6 +24,9 @@
   --space-4: 24px;
   --space-5: 32px;
   --space-6: 64px;
+  --space-7: 128px;
+  --space-8: 256px;
+  --space-9: 512px;
   --size-gutter: var(--space-5);
   --size-gap: var(--space-6);
 
@@ -83,6 +88,15 @@ h1 {
 h1 > b {
   color: var(--color-primary);
 }
+h2 {
+  margin: 0;
+  margin-bottom: 3rem;
+  padding: 0;
+  line-height: var(--line-height-dense);
+  letter-spacing: -0.03em;
+  font-size: var(--font-xlg);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 img {
   border-style: none;
   max-width: 100%;
@@ -125,10 +139,14 @@ ol,
 dl,
 dd,
 p {
-  /* margin: 0;
-  padding: 0; */
   margin-top: var(--space-4);
   margin-bottom: var(--space-4);
+}
+p {
+  color: var(--color-primary);
+  /* margin-left: calc(var(--space-7));
+  padding: 0; */
+
 }
 ul,
 ol {

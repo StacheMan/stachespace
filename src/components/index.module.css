@@ -6,11 +6,12 @@
   gap: 50px;
   margin-bottom: -50px;
   margin-top: -20px;
-  margin-left: 620px;
-  margin-right: var(--size-gap);
+  margin-left: 320px;
   overflow: hidden;
   align-self: center;
   padding-left: 125px;
+  column-count: 2;
+ 
 
 }
 
@@ -27,6 +28,15 @@
 .textCenter {
   text-align: center;
   margin-top: -80px;
+}
+
+.textBody {
+  text-align: center;
+  margin-top: -30px;
+  margin-left: calc(var(--space-9) + 48px);
+  line-height: var(--line-height-normal);
+  padding: 0;
+  
 }
 
 .intro {
