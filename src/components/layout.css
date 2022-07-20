@@ -38,6 +38,7 @@ html {
   font-size: var(--font-md);
   line-height: var(--line-height-normal);
   overflow-y: scroll;
+  /* position: relative; */
 }
 body {
   -moz-osx-font-smoothing: grayscale;
@@ -144,8 +145,8 @@ p {
 }
 p {
   color: var(--color-primary);
-  /* margin-left: calc(var(--space-7));
-  padding: 0; */
+  /* margin-left: calc(var(--space-7)); */
+ 
 
 }
 ul,

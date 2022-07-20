@@ -32,22 +32,22 @@ const Frontpage = () => (
     <ul className={styles.list}>
       <li>
         <a href="https://twitter.com/MusclestacheG">
-          <img alt="Twitter" src={Twitter} width={200} height={100}></img>
+          <img alt="Twitter" src={Twitter} width={100} height={100}></img>
         </a>
       </li>
       <li>
         <a href="https://www.youtube.com/channel/UCP9thOaAhuyoyO8iVrHx2BQ/?guided_help_flow=5&disable_polymer=true">
-          <img alt="YouTube" src={YouTube} width={200} height={100}></img>
+          <img alt="YouTube" src={YouTube} width={100} height={100}></img>
         </a>
       </li>
       <li>
         <a href="https://discord.gg/G2xvVfA">
-          <img alt="Discord" src={Discord} width={200} height={100}></img>
+          <img alt="Discord" src={Discord} width={100} height={100}></img>
         </a>
       </li>
       <li>
         <a href="https://www.instagram.com/musclestachegaming/">
-          <img alt="Instagram" src={Instagram} width={200} height={100}></img>
+          <img alt="Instagram" src={Instagram} width={100} height={100}></img>
         </a>
       </li>
       {/* <li>
